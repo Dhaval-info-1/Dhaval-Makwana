@@ -16,8 +16,11 @@
         header {
             background: #333;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
+        }
+        h1, h2 {
+            margin: 0;
         }
         nav ul {
             list-style: none;
@@ -35,48 +38,32 @@
             padding: 20px;
             margin: 20px;
             background: #fff;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         }
         footer {
             text-align: center;
-            padding: 10px 0;
+            padding: 20px 0;
             background: #333;
             color: #fff;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
         }
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
         }
-        .portfolio-item {
+        .portfolio-item, .blog-post {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
             margin-bottom: 20px;
         }
-        .blog-post {
-            margin-bottom: 20px;
-        }
-        .contact-form {
-            display: flex;
-            flex-direction: column;
-        }
-        .contact-form input, .contact-form textarea {
-            padding: 10px;
-            margin: 5px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .contact-form button {
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            background: #333;
-            color: #fff;
-            cursor: pointer;
+        .blog-post a {
+            color: #333;
+            text-decoration: underline;
         }
     </style>
+
 </head>
 <body>
 
@@ -86,8 +73,8 @@
     <nav>
         <ul>
             <li><a href="#about">About Me</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#resume">Resume</a></li>
+            
+            
             <li><a href="#blog">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -95,54 +82,53 @@
 </header>
 
 <div class="container">
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm Dhaval Makwana, a dedicated and passionate Project Manager with extensive experience in managing projects from conception to completion. I have a proven track record of delivering projects on time and within budget, and I'm skilled at leading cross-functional teams to achieve strategic goals.</p>
-    </section>
+   <section id="about">
+  <h2>About Me</h2>
+  <p>I'm Dhaval Makwana, a passionate Project Manager with a proven track record of leading complex projects to success. I hold an MBA with a focus on IT, equipping me with the strategic business acumen and technical understanding to navigate the ever-evolving landscape of technology projects.</p>
 
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="portfolio-item">
-            <h3>Project Title 1</h3>
-            <p>Description of the project, technologies used, and your role.</p>
-        </div>
-        <div class="portfolio-item">
-            <h3>Project Title 2</h3>
-            <p>Description of the project, technologies used, and your role.</p>
-        </div>
-    </section>
+  <p>My passion lies in spearheading the development of cutting-edge AI products. I leverage my strong project management skills, combined with in-depth knowledge of artificial intelligence, to guide teams in delivering innovative solutions that drive real-world results.</p>
 
-    <section id="resume">
-        <h2>Resume</h2>
-        <p>Summary of your professional experience, education, and skills.</p>
-    </section>
+  <p>Whether it's ensuring projects stay on time and within budget, fostering effective cross-functional collaboration, or driving successful product launches, I thrive in dynamic environments and excel at bringing out the best in my teams.</p>
 
+  <p>Let's collaborate and navigate the exciting world of AI together! I'm confident that my expertise and dedication can help you achieve your project goals and unlock the potential of AI.</p>
+</section>
+
+  
     <section id="blog">
         <h2>Blog</h2>
         <div class="blog-post">
-            <h3>Blog Post Title 1</h3>
-            <p>Excerpt from the blog post...</p>
-            <a href="#">Read more</a>
+            <h3>Navigating the Agile Seas: A Visual Expedition into Scrum</h3>
+            <p>Welcome aboard to the exciting world of project management, where Scrum shines as a guiding light, transforming team collaborations and delivering excellence. Get ready for an immersive guide that will take you on a comprehensive journey through the Scrum framework, revealing its core components: roles, events, and artifacts.</p>
+            <a href="https://medium.com/@dhaval.info/navigating-the-agile-seas-a-visual-expedition-into-scrum-d004f4ce064d">Read more</a>
         </div>
         <div class="blog-post">
-            <h3>Blog Post Title 2</h3>
-            <p>Excerpt from the blog post...</p>
-            <a href="#">Read more</a>
+            <h3>Cracking the Code: A Project Manager’s Path to High-Quality Code Projects!</h3>
+            <p>Starting a software project can be exciting but also overwhelming. Let’s break it down into simple steps you can tackle every day. Here’s how to manage your software project smoothly and create top-notch code projects!</p>
+            <a href="https://medium.com/@dhaval.info/project-management-by-dhaval-makwana-d5d78ec9f184">Read more</a>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <form class="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
+      <section id="contact">
+    <h2>Let's Chat!</h2>
+    <form class="contact-form" action="mailto:dhaval.m@brilworks.com">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
         </form>
     </section>
 </div>
 
 <footer>
+
+  <ul class="contact-info">
+    <li><i class="fas fa-phone"></i> +91 9558724480 (Phone)</li>
+    <li><i class="fas fa-envelope"></i> <a href="mailto:dhaval2123mba@gamil.com">dhaval2123mba@gamil.com</a> (Email)</li>
+    <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/dhaval.info/" target="_blank">Instagram</a></li>
+    <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/dhavalmakwana-/" target="_blank">LinkedIn</a></li>
+<li><i class="fab fa-Medium"></i> <a href="https://medium.com/@dhaval.info/"target="_blank">Medium</a></li>
+
+  </ul>
     <p>&copy; 2024 Dhaval Makwana. All rights reserved.</p>
 </footer>
 
