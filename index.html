@@ -108,15 +108,44 @@
         </div>
     </section>
 
-      <section id="contact">
-    <h2>Let's Chat!</h2>
-    <form class="contact-form" action="mailto:dhaval.m@brilworks.com">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-        </form>
-    </section>
+    <section id="contact">
+    <h2>Contact</h2>
+    <form class="contact-form" id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+    <p id="responseMessage" style="color: green; display: none;">Your message has been sent!</p>
+</section>
+
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const form = e.target;
+        const data = {
+            name: form.name.value,
+            email: form.email.value,
+            message: form.message.value
+        };
+
+        fetch('https://script.google.com/macros/s/AKfycbyC-PDL2zhKRozDFyuV038-27JOusZeDqmOnih0Ah4KZmRtkFvXg-mX2f22RVzb7stJ3g/exec', {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }).then(response => response.json())
+          .then(data => {
+              if (data.status === 'success') {
+                  document.getElementById('responseMessage').style.display = 'block';
+                  form.reset();
+              }
+          })
+          .catch(error => console.error('Error:', error));
+    });
+</script>
+
 </div>
 
 <footer>
