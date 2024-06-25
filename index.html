@@ -116,54 +116,14 @@
         </div>
     </section>
 
-    <section id="contact">
-    <h2>Contact</h2>
-    <form class="contact-form" id="contactForm">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-    </form>
-    <p id="responseMessage" style="color: green; display: none;">Your message has been sent!</p>
-</section>
-
-<script>
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-        const form = e.target;
-        const data = {
-            name: form.name.value,
-            email: form.email.value,
-            message: form.message.value
-        };
-
-        fetch('https://script.google.com/macros/s/AKfycbyC-PDL2zhKRozDFyuV038-27JOusZeDqmOnih0Ah4KZmRtkFvXg-mX2f22RVzb7stJ3g/exec', {
-            method: 'POST',
-            body: JSON.stringify(data),
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        }).then(response => response.json())
-          .then(data => {
-              if (data.status === 'success') {
-                  document.getElementById('responseMessage').style.display = 'block';
-                  form.reset();
-              }
-          })
-          .catch(error => console.error('Error:', error));
-    });
-</script>
 
 </div>
 
 <footer>
 
   <ul class="contact-info">
-    <li><i class="fas fa-phone"></i> +91 9558724480 (Phone)</li>
-    <li><i class="fas fa-envelope"></i> <a href="mailto:dhaval2123mba@gamil.com">dhaval2123mba@gamil.com</a> (Email)</li>
     <li><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/dhaval.info/" target="_blank">Instagram</a></li>
     <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/dhavalmakwana-/" target="_blank">LinkedIn</a></li>
-<li><i class="fab fa-Medium"></i> <a href="https://medium.com/@dhaval.info/"target="_blank">Medium</a></li>
 
   </ul>
     <p>&copy; 2024 Dhaval Makwana. All rights reserved.</p>
