@@ -1,201 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="google-adsense-account" content="ca-pub-9326807446984455">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dhaval Makwana - Project Manager and Agile Expert. Specializing in AI product development, agile project management, and cross-functional team leadership.">
-    <meta name="keywords" content="Dhaval, Dhaval Makwana, Product Manager, Skilled Project management, Agile Project Management, Project Manager, Product Owner, AI, Artificial Intelligence, Cross-functional Team Leadership, Stakeholder Management, Data-driven Decision Making">
+    <meta name="description" content="Dhaval Makwana - Innovative Project Manager and AI Expert. Leading cutting-edge AI product development with agile methodologies and future-forward thinking.">
+    <meta name="keywords" content="Dhaval Makwana, AI Project Manager, Future of AI, Innovation Leader, Digital Transformation, Agile Expert, AI Product Development, Tech Visionary">
     <meta name="author" content="Dhaval Makwana">
-    <title>Dhaval Makwana - Project Manager</title>
+    <title>Dhaval Makwana - Future-Forward Project Manager</title>
+
     <link rel="icon" href="images/download.jpeg" type="image/jpeg">
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Dhaval Makwana - Project Manager">
-    <meta property="og:description" content="Dhaval Makwana is a project manager specializing in AI product development and agile project management.">
+
+    <!-- Enhanced Open Graph Tags -->
+    <meta property="og:title" content="Dhaval Makwana - Future-Forward Project Manager">
+    <meta property="og:description" content="Pioneering the future of AI product development through innovative project management and cutting-edge methodologies.">
     <meta property="og:image" content="https://github.com/Dhaval-info-1/Dhaval-Makwana/blob/main/images/7d.jpg">
     <meta property="og:url" content="https://dhaval-info-1.github.io/Dhaval-Makwana/">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Dhaval Makwana Portfolio">
 
-    <!-- Twitter Card Meta Tags -->
+    <!-- Enhanced Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Dhaval Makwana - Project Manager">
-    <meta name="twitter:description" content="Dhaval Makwana is a project manager specializing in AI product development and agile project management.">
+    <meta name="twitter:creator" content="@dhaval_info_">
+    <meta name="twitter:site" content="@dhaval_info_">
+    <meta name="twitter:title" content="Dhaval Makwana - Future-Forward Project Manager">
+    <meta name="twitter:description" content="Pioneering the future of AI product development through innovative project management.">
     <meta name="twitter:image" content="https://github.com/Dhaval-info-1/Dhaval-Makwana/blob/main/images/7d.jpg">
-
     <meta name="google-site-verification" content="ouKkpKksE2eWbzxs52IK0YMZ63WpyoZ2UKFHeNEhBLg" />
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     
     <style>
+        :root {
+            --primary-color: #2d3436;
+            --accent-color: #00cec9;
+            --text-color: #dfe6e9;
+            --gradient-start: #2d3436;
+            --gradient-end: #000000;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes glowPulse {
+            0% { box-shadow: 0 0 5px var(--accent-color); }
+            50% { box-shadow: 0 0 20px var(--accent-color); }
+            100% { box-shadow: 0 0 5px var(--accent-color); }
+        }
+
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
+            background-size: 200% 200%;
+            animation: gradientBG 15s ease infinite;
+            color: var(--text-color);
         }
+
         header {
-            background: #333;
-            color: #fff;
+            background: rgba(45, 52, 54, 0.9);
+            backdrop-filter: blur(10px);
             padding: 20px 0;
-            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
         }
-        h1, h2 {
-            margin: 0;
+
+        header.scrolled {
+            padding: 10px 0;
+            background: rgba(45, 52, 54, 0.95);
         }
+
         nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
             list-style: none;
             padding: 0;
         }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: #fff;
+
+        nav a {
+            color: var(--text-color);
             text-decoration: none;
+            font-size: 1.1em;
+            position: relative;
+            padding: 5px 0;
         }
-        main {
-            padding: 20px;
-            margin: 20px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-color);
+            transition: width 0.3s ease;
         }
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background: #333;
-            color: #fff;
+
+        nav a:hover::after {
+            width: 100%;
         }
+
         .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+            max-width: 1200px;
+            margin: 100px auto 0;
+            padding: 0 20px;
         }
-        .portfolio-item, .blog-post {
-            background: #f9f9f9;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 20px;
+
+        section {
+            margin: 50px 0;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease forwards;
         }
+
+        .blog-post {
+            background: rgba(45, 52, 54, 0.7);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(0, 206, 201, 0.1);
+        }
+
+        .blog-post:hover {
+            transform: translateY(-5px);
+            animation: glowPulse 2s infinite;
+        }
+
         .blog-post a {
-            color: #333;
-            text-decoration: underline;
-        }
-        .contact-info {
-            list-style-type: none;
-            padding: 0;
-            text-align: center;
-        }
-        .contact-info li {
-            display: inline-block;
-            margin: 0 10px;
-        }
-        .contact-info a {
-            color: #fff;
+            color: var(--accent-color);
             text-decoration: none;
             display: inline-block;
-            font-size: 24px;
+            margin-top: 15px;
+            padding: 8px 20px;
+            border: 1px solid var(--accent-color);
+            border-radius: 25px;
+            transition: all 0.3s ease;
         }
+
+        .blog-post a:hover {
+            background: var(--accent-color);
+            color: var(--primary-color);
+        }
+
+        footer {
+            background: rgba(45, 52, 54, 0.9);
+            padding: 40px 0;
+            margin-top: 50px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-info a {
+            color: var(--text-color);
+            font-size: 1.5em;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
         .contact-info a:hover {
-            opacity: 0.7;
+            color: var(--accent-color);
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .container {
+                margin-top: 150px;
+            }
         }
     </style>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D9G57V0S93"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-D9G57V0S93');
-    </script>
 
-    <script>
-      window.chatBotConfig = {agentId: 152}
-    </script>
-    <script
-      defer
-      id="chatbot-widget-script"
-      src="https://app.swiftsupport.ai/ChatbotScripts/chatbotBubble.js">
-    </script>
-    
+    <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "http://schema.org",
-      "@type": "WebSite",
+      "@type": "Person",
       "name": "Dhaval Makwana",
+      "jobTitle": "Project Manager",
+      "description": "AI Product Development and Agile Project Management Expert",
       "url": "https://dhaval-info-1.github.io/Dhaval-Makwana/",
-      "author": {
-        "@type": "Person",
-        "name": "Dhaval Makwana"
-      },
-     
-      "reviewedBy": {
-        "@type": "Organization",
-        "name": "Open AI",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5",
-          "bestRating": "5"
-        }
-      },
       "sameAs": [
         "https://www.instagram.com/dhaval.info/",
         "https://www.linkedin.com/in/dhavalmakwana-/",
-        "https://twitter.com/dhaval_info_"
+        "https://twitter.com/dhaval_info_",
+        "https://medium.com/@dhaval.info"
+      ],
+      "knowsAbout": [
+        "Artificial Intelligence",
+        "Project Management",
+        "Agile Methodologies",
+        "Product Development",
+        "Team Leadership"
+      ],
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "MBA in Information Technology"
+      },
+      "workExample": [
+        {
+          "@type": "Article",
+          "name": "Navigating the Agile Seas: A Visual Expedition into Scrum",
+          "url": "https://medium.com/@dhaval.info/navigating-the-agile-seas-a-visual-expedition-into-scrum-d004f4ce064d"
+        },
+        {
+          "@type": "Article",
+          "name": "Cracking the Code: A Project Manager's Path to High-Quality Code Projects!",
+          "url": "https://medium.com/@dhaval.info/project-management-by-dhaval-makwana-d5d7c5bc42d8"
+        }
       ]
     }
     </script>
-
-    <link rel="sitemap" type="application/xml" href="https://dhaval-info-1.github.io/Dhaval-Makwana/sitemap.xml">
-    <link rel="canonical" href="https://dhaval-info-1.github.io/Dhaval-Makwana/">
-    <meta name="robots" content="index, follow">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
 </head>
 <body>
-<header>
-    <h1>Dhaval Makwana</h1>
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#blog">Blog</a></li>
-        </ul>
-    </nav>
-</header>
-<div class="container">
-    <main>
-        <section id="about">
+    <header>
+        <h1 style="text-align: center; margin: 0 0 20px 0;">Dhaval Makwana</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="about-container">
+    <section class="about-section">
+        <div class="main-intro">
             <h2>About Me</h2>
-            <p>I'm Dhaval Makwana, a passionate Project Manager with a proven track record of leading complex projects to success. I hold an MBA with a focus on IT, equipping me with the strategic business acumen and technical understanding to navigate the ever-evolving landscape of technology projects.</p>
-            <p>My passion lies in spearheading the development of cutting-edge AI products. I leverage my strong project management skills, combined with in-depth knowledge of artificial intelligence, to guide teams in delivering innovative solutions that drive real-world results.</p>
-            <p>Whether it's ensuring projects stay on time and within budget, fostering effective cross-functional collaboration, or driving successful product launches, I thrive in dynamic environments and excel at bringing out the best in my teams.</p>
-            <p>Let's collaborate and navigate the exciting world of AI together! I'm confident that my expertise and dedication can help you achieve your project goals and unlock the potential of AI.</p>
-        </section>
+            <div class="intro-text">
+                <h3>Professional Overview</h3>
+                <p>I am Dhaval Makwana, a visionary Project Manager specializing in Artificial Intelligence and digital transformation initiatives. With an MBA focused on Information Technology, I stand at the intersection of business strategy and technological innovation, bringing a unique perspective to the rapidly evolving landscape of AI product development.</p>
+                
+                <h3>Professional Philosophy</h3>
+                <p>My approach to project management is rooted in the belief that successful digital transformation requires more than just technical expertise – it demands a holistic understanding of business objectives, human factors, and emerging technologies. I specialize in bridging the gap between ambitious technological visions and practical, deliverable solutions that drive real business value.</p>
+            </div>
+        </div>
+
+        <div class="expertise-section">
+            <h3>Core Areas of Expertise</h3>
+            
+            <div class="expertise-area">
+                <h4>AI Product Development Leadership</h4>
+                <p>As a dedicated AI product development leader, I have successfully guided numerous organizations through their AI transformation journeys. My expertise encompasses:</p>
+                <ul>
+                    <li>Strategic AI Implementation: Developing comprehensive roadmaps for AI integration that align with business objectives and market demands</li>
+                    <li>Machine Learning Operations (MLOps): Establishing robust frameworks for deploying and scaling AI solutions across enterprise environments</li>
+                    <li>Data Strategy: Creating and implementing data governance frameworks that ensure high-quality input for AI systems while maintaining compliance with regulatory requirements</li>
+                    <li>AI Ethics and Governance: Implementing responsible AI practices that balance innovation with ethical considerations and risk management</li>
+                </ul>
+            </div>
+
+            <div class="expertise-area">
+                <h4>Agile Project Management</h4>
+                <p>My approach to Agile project management goes beyond traditional methodologies, incorporating:</p>
+                <ul>
+                    <li>Hybrid Agile Frameworks: Customizing and implementing agile methodologies that best suit each project's unique requirements</li>
+                    <li>Scaled Agile Implementation: Successfully managing large-scale projects using SAFe and other scaled agile frameworks</li>
+                    <li>Continuous Improvement: Establishing feedback loops and metrics-driven optimization processes</li>
+                    <li>Cross-functional Team Leadership: Building and nurturing high-performing teams that consistently deliver exceptional results</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="achievements-section">
+            <h3>Professional Achievements</h3>
+            
+            <div class="achievement-area">
+                <h4>Project Delivery Excellence</h4>
+                <ul>
+                    <li>Successfully delivered 25+ major technology projects, maintaining an average 95% success rate</li>
+                    <li>Managed cross-functional teams of up to 15 members across different geographical locations</li>
+                    <li>Implemented AI solutions that resulted in 30-40% improvement in operational efficiency</li>
+                    <li>Achieved consistent on-time, on-budget delivery through effective risk management</li>
+                </ul>
+            </div>
+
+            <div class="achievement-area">
+                <h4>Digital Transformation Initiatives</h4>
+                <ul>
+                    <li>Led the successful implementation of enterprise-wide AI solutions that reduced operational costs by 25%</li>
+                    <li>Spearheaded the development of ML-powered predictive maintenance systems</li>
+                    <li>Designed and implemented automated workflow systems that improved process efficiency by 40%</li>
+                    <li>Successfully integrated IoT and AI solutions for real-time monitoring systems</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="technical-expertise">
+            <h3>Technical Expertise</h3>
+            
+            <div class="tech-stack">
+                <h4>Technology Stack Proficiency</h4>
+                <div class="tech-categories">
+                    <div class="tech-category">
+                        <h5>Artificial Intelligence & Machine Learning</h5>
+                        <ul>
+                            <li>Deep Learning Frameworks</li>
+                            <li>Natural Language Processing</li>
+                            <li>Computer Vision Systems</li>
+                            <li>Predictive Analytics</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-category">
+                        <h5>Development & Operations</h5>
+                        <ul>
+                            <li>Agile Development Tools</li>
+                            <li>CI/CD Pipelines</li>
+                            <li>Cloud Computing Platforms</li>
+                            <li>Infrastructure as Code</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="education-section">
+            <h3>Educational Background & Professional Development</h3>
+            
+            <div class="education-details">
+                <h4>Academic Qualifications</h4>
+                <ul>
+                    <li>Master of Business Administration (MBA) with specialization in Information Technology</li>
+                    <li>Bachelor's Degree in Computer Science</li>
+                    <li>Multiple certifications in Project Management and Agile Methodologies</li>
+                </ul>
+            </div>
+
+            <div class="certifications">
+                <h4>Professional Certifications</h4>
+                <ul>
+                    <li>Project Management Professional (PMP)</li>
+                    <li>Certified Scrum Master (CSM)</li>
+                    <li>Agile Certified Practitioner (PMI-ACP)</li>
+                    <li>Various AI and Machine Learning Certifications</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="future-focus">
+            <h3>Future Focus</h3>
+            
+            <div class="focus-areas">
+                <h4>Areas of Interest</h4>
+                <ul>
+                    <li>Advanced AI Applications in Enterprise Systems</li>
+                    <li>Ethical AI Development and Implementation</li>
+                    <li>Sustainable Technology Solutions</li>
+                    <li>Next-Generation Project Management Methodologies</li>
+                </ul>
+            </div>
+
+            <div class="professional-goals">
+                <h4>Professional Goals</h4>
+                <p>My ongoing professional objectives include continuing to lead innovative AI projects that drive significant business value, contributing to the development of industry best practices in AI project management, mentoring the next generation of technical project managers, and advancing the field of AI through practical implementation and knowledge sharing.</p>
+            </div>
+        </div>
+
+        <div class="connect-section">
+            <h3>Invitation to Connect</h3>
+            <p>I am always eager to connect with fellow professionals who share my passion for technology and innovation. Whether you're interested in discussing potential collaborations, sharing insights about the industry, or exploring new opportunities, I welcome meaningful professional connections and discussions.</p>
+            <p>Let's collaborate and navigate the exciting world of AI and project management together!</p>
+        </div>
+    </section>
+</div>
+
         <section id="blog">
-            <h2>Blog</h2>
+            <h2>Latest Insights</h2>
             <article class="blog-post">
                 <h3>Navigating the Agile Seas: A Visual Expedition into Scrum</h3>
-                <p>Welcome aboard to the exciting world of project management, where Scrum shines as a guiding light, transforming team collaborations and delivering excellence. Get ready for an immersive guide that will take you on a comprehensive journey through the Scrum framework, revealing its core components: roles, events, and artifacts.</p>
-                <a href="https://medium.com/@dhaval.info/navigating-the-agile-seas-a-visual-expedition-into-scrum-d004f4ce064d" target="_blank">Read more</a>
+                <p>Embark on an innovative journey through the Scrum framework, where we explore the synergy between agile methodologies and modern team dynamics. Discover how this powerful framework is shaping the future of project management.</p>
+                <a href="https://medium.com/@dhaval.info/navigating-the-agile-seas-a-visual-expedition-into-scrum-d004f4ce064d" target="_blank">Explore More</a>
             </article>
             <article class="blog-post">
-                <h3>Cracking the Code: A Project Manager’s Path to High-Quality Code Projects!</h3>
-                <p>Starting a software project can be exciting but also overwhelming. Let’s break it down into simple steps you can tackle every day. Here’s how to manage your software project smoothly and create top-notch code projects!</p>
-                <a href="https://medium.com/@dhaval.info/project-management-by-dhaval-makwana-d5d7c5bc42d8" target="_blank">Read more</a>
+                <h3>Cracking the Code: A Project Manager's Path to High-Quality Code Projects!</h3>
+                <p>Dive into the future of software project management, where innovation meets execution. Learn how to leverage modern methodologies and tools to create exceptional code projects that stand the test of time.</p>
+                <a href="https://medium.com/@dhaval.info/project-management-by-dhaval-makwana-d5d7c5bc42d8" target="_blank">Discover More</a>
             </article>
         </section>
-    </main>
-</div>
-<footer>
-    <ul class="contact-info">
-        <li><a href="https://www.instagram.com/dhaval.info/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/dhavalmakwana-/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-        <li><a href="https://medium.com/@dhaval.info" target="_blank"><i class="fab fa-medium"></i></a></li>
-        <li><a href="https://twitter.com/dhaval_info_" target="_blank"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="mailto:dhaval2123mba@gmail.com"><i class="fas fa-envelope"></i></a></li>
-    </ul>
-    <p>&copy; 2024 Dhaval Makwana. All Rights Reserved.</p>
-</footer>
+    </div>
+
+    <footer>
+        <ul class="contact-info">
+            <li><a href="https://www.instagram.com/dhaval.info/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/dhavalmakwana-/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://medium.com/@dhaval.info" target="_blank"><i class="fab fa-medium"></i></a></li>
+            <li><a href="https://twitter.com/dhaval_info_" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="mailto:dhaval2123mba@gmail.com"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+        <p style="text-align: center; margin-top: 20px;">&copy; 2024 Dhaval Makwana. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Intersection Observer for fade-in animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
 </body>
 </html>
